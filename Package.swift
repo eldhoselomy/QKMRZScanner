@@ -10,8 +10,8 @@ let package = Package(
         .library(name: "QKMRZScanner", targets: ["QKMRZScanner"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Mattijah/QKMRZParser.git", .upToNextMajor(from: "2.0.0")),
-        .package(url: "https://github.com/SwiftyTesseract/SwiftyTesseract", .upToNextMajor(from: "4.0.1"))
+        .package(url: "https://github.com/eldhoselomy/QKMRZParser.git", branch: "master"),
+        .package(url: "https://github.com/eldhoselomy/SwiftyTesseract.git", branch: "develop")
     ],
     targets: [
         .target(
