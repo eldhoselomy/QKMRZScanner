@@ -17,7 +17,10 @@ let package = Package(
         .target(
             name: "QKMRZScanner",
             dependencies: ["QKMRZParser", "SwiftyTesseract"],
-            resources: [.copy("Resources/tessdata")]
+            resources: [.copy("Resources/tessdata")],
+            swiftSettings: [
+                .unsafeFlags(["-enable-library-evolution"])
+            ]
         )
     ]
 )
