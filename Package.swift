@@ -10,14 +10,14 @@ let package = Package(
         .library(name: "QKMRZScanner", targets: ["QKMRZScanner"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/eldhoselomy/QKMRZParser.git", branch: "master"),
+        .package(url: "https://github.com/eldhoselomy/QKMRZParser.git", revision: "517a375865b023cc4c73a09a83ed253133dc3c74"),
         .package(url: "https://github.com/eldhoselomy/SwiftyTesseract.git", branch: "develop")
     ],
     targets: [
         .target(
             name: "QKMRZScanner",
             dependencies: ["QKMRZParser", "SwiftyTesseract"],
-            resources: [.copy("Resources/tessdata")] // `tessdata` must be located at the root
+            resources: [.copy("Resources/tessdata")]
         )
     ]
 )

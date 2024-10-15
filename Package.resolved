@@ -14,8 +14,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/eldhoselomy/QKMRZParser.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "571cf290364911b8d109a54ff189d50c10b56abd"
+        "revision" : "517a375865b023cc4c73a09a83ed253133dc3c74"
       }
     },
     {
