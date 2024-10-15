@@ -5,12 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "QKMRZScanner",
-    platforms: [.iOS(.v11)],
+    platforms: [
+            .iOS(.v16)
+    ],
     products: [
         .library(name: "QKMRZScanner", targets: ["QKMRZScanner"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/eldhoselomy/QKMRZParser.git", revision: "517a375865b023cc4c73a09a83ed253133dc3c74"),
+        .package(url: "https://github.com/eldhoselomy/QKMRZParser.git", branch: "develop"),
         .package(url: "https://github.com/eldhoselomy/SwiftyTesseract.git", branch: "develop")
     ],
     targets: [
@@ -18,9 +20,7 @@ let package = Package(
             name: "QKMRZScanner",
             dependencies: ["QKMRZParser", "SwiftyTesseract"],
             resources: [.copy("Resources/tessdata")],
-            swiftSettings: [
-                .unsafeFlags(["-enable-library-evolution"])
-            ]
+            swiftSettings: [.unsafeFlags(["-enable-library-evolution"])]
         )
     ]
 )

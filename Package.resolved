@@ -14,7 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/eldhoselomy/QKMRZParser.git",
       "state" : {
-        "revision" : "517a375865b023cc4c73a09a83ed253133dc3c74"
+        "branch" : "develop",
+        "revision" : "6bf1abb8e1e6ead8096cdfe54bdbd2c596f9a078"
       }
     },
     {
@@ -23,7 +24,7 @@
       "location" : "https://github.com/eldhoselomy/SwiftyTesseract.git",
       "state" : {
         "branch" : "develop",
-        "revision" : "3ac7ac98cb7ce5ac8eb3107b41cdbf9d38899a5c"
+        "revision" : "6a8c63b9f8e0af5278f17b8f6d715b0ecb869f4a"
       }
     }
   ],
